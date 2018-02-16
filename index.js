@@ -1,12 +1,12 @@
-#! /usrr/bin/env node
+#! /usr/bin/env node
 
-const fs =  require('fs')
+const fs = require('fs')
 
-fs.readFile(__dirname + '/info.json', 'utf8', function(err, data) {
-    if (err) {
-        console.log(err)
+fs.readFile(__dirname + '/info.json', 'utf8', function (err, data) {
+  if (err) {
+      console.log(err)
     } else {
-        console.log(data)
-        return data
+      console.log(data)
+      return data
     }
 })
